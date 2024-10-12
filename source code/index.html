@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mosquito Game</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script src="https://pyscript.net/latest/pyscript.js"></script>
+    <script src="https://pyscript.net/latest/pyscript-stdlib.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Mosquito Game</h1>
+    </header>
+    <main>
+        <div id="game">
+            <div id="mosquito" class="mosquito"></div>
+            <div id="score" class="score">0</div>
+            <div id="life" class="life">3</div>
+        </div>
+    </main>
+    <py-config>
+        <script type="text/python">
+            from game import Game
+            game = Game()
+            game.start()
+        </script>
+    </py-config>
+</body>
+</html>
